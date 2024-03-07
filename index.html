@@ -14,7 +14,7 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            color: #555;
+            color: #333;
         }
         header {
             background-color: #222;
@@ -34,6 +34,8 @@
             padding: 10px 20px;
             transition: background-color 0.3s;
             margin: 0 5px;
+            font-weight: bold;
+            border-radius: 5px;
         }
         nav a:hover {
             background-color: #444;
@@ -49,6 +51,7 @@
         .section-heading {
             font-size: 36px;
             margin-bottom: 30px;
+            color: #333;
         }
         .services {
             display: flex;
@@ -64,14 +67,16 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.3s;
+            cursor: pointer;
         }
         .service:hover {
             transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .service i {
             font-size: 48px;
             margin-bottom: 20px;
-            color: #333;
+            color: #FFD700;
         }
         .service h3 {
             font-size: 24px;
@@ -80,9 +85,10 @@
         }
         .service p {
             color: #777;
+            font-size: 16px;
         }
         .proof {
-            background-color: #fff;
+            background-color: #f9f9f9;
             padding: 50px 20px;
         }
         .testimonial {
@@ -91,9 +97,11 @@
         .testimonial p {
             font-style: italic;
             margin-bottom: 10px;
+            color: #555;
         }
         .testimonial-author {
             font-weight: bold;
+            color: #333;
         }
         .statistics {
             display: flex;
@@ -122,16 +130,8 @@
             font-size: 18px;
             margin-bottom: 5px;
         }
-        .about-text {
-            text-align: left;
-            line-height: 1.6;
-        }
-        .about-text p {
-            margin-bottom: 20px;
-        }
-        .about-text h3 {
-            color: #333;
-            margin-bottom: 15px;
+        .contact-info {
+            font-size: 18px;
         }
     </style>
 </head>
@@ -209,8 +209,10 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-heading">Contact Us</h2>
-            <p>Reach out to us at:</p>
-            <p>Email: birthx@cock.li</p>
+            <div class="contact-info">
+                <p>Reach out to us at:</p>
+                <p>Email: birthx@cock.li</p>
+            </div>
         </div>
     </section>
     <footer>
